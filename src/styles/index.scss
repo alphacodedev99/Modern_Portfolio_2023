@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+// import other styles/components/pages
+@import '../components/Navbar/navbar';
+@import '../components/Main/main';
+@import './variable';
+@import '../components/AboutMe/aboutme';
+@import '../components/MySkills/myskills';
+@import '../components/MyWork/mywork';
+@import '../components/Contact/contact';
+
+// global styles
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Inconsolata', monospace;
+  background-color: $mainDark;
+
+}
+
+a{
+  text-decoration: none;
+  color: #333;
+}
+ul{
+  list-style: none;
+}
+
+
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: $container;
+
+  @media screen and (max-width: 1440px){
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  @media screen and (max-width: 768px){
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0;
+
+  }
+
+}

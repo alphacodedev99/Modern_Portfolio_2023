@@ -1,0 +1,47 @@
+.aboutme{
+
+    display: flex;
+    justify-content: center;
+    margin: 80px 0;
+
+    @media screen and (max-width: 400px){
+        margin: 40px 0px;
+    }
+    
+    &-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        width: 80%;
+
+        @media screen and (max-width: 767px) {
+            width: 95%;
+        }
+        @media screen and (max-width: 400px) {
+            width: 90%;
+            flex-direction: column;
+            gap: 20px;
+
+        }
+
+        img{
+            width: 100px;
+            height: 100px;
+            // object-fit: cover;
+        }
+
+
+        p{
+            color: $light;
+            font-size: 24px;
+
+            @media screen and (max-width:400px){
+                font-size: 16px;
+                text-align: center;
+                line-height: 20px;
+            }
+        }
+    }
+
+}
